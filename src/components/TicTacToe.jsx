@@ -78,6 +78,7 @@ const TicTacToe = () => {
   const reset = () => {
     setLock(false);
     data = ["","","","","","","","",""];
+    winref.current.innerHTML = "";
     boxArr?.map((e) => {
       e.current.innerHTML = "" ;
     })
